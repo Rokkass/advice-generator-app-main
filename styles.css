@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body{
+    background-color: var(--dark-blue);
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    height: 100vh;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+main{
+    background-color: var(--dark-grayish-blue);
+    background-image: url("images/pattern-divider-desktop.svg");
+    background-position: center 77%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    max-width: 540px;
+    padding: 3%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 20px);
+}
+
+span{
+    display: inline-block;
+}
+
+.advice__number{
+    color: var(--neon-green);
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.advice__content{
+    color: var(--light-cyan);
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.advice__roll{
+    aspect-ratio: 1 / 1;
+    background-color: var(--neon-green);
+    background-image: url("images/icon-dice.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border: 0;
+    border-radius: 50%;
+    bottom: -32px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 64px;
+}
+
+.advice__roll:hover{
+    box-shadow: 0px 0 20px 5px var(--neon-green);
+    cursor: pointer;
+}
+
+.timer{
+    background-color: var(--neon-green);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    transform: translateX(50%);
+    transition: ease-in-out 0.25s;
+    top: -50px;
+    width: 200px;
+}
+
+@media screen and (max-width: 375px){
+
+}
